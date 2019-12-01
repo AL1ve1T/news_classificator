@@ -1,0 +1,6 @@
+venv
+\#*\#
+.\#*
+uci-news-aggregator.csv
+__pycache__/
+*~
