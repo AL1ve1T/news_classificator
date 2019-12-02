@@ -27,8 +27,9 @@ class Model:
 
     def __init__(self, dataset):    
         # Parameters
+        self.plot_dir = './plot/'
         self.learning_rate = 0.01
-        self.num_epochs = 10
+        self.num_epochs = 3
         self.batch_size = 150
 
         self.dataset = dataset
@@ -64,6 +65,7 @@ class Model:
         # Loss and Optimizer
         criterion = nn.CrossEntropyLoss()  # This includes the Softmax loss function
         optimizer = torch.optim.Adam(net.parameters(), lr=self.learning_rate)
+        losses = []
         # Train the Model
         for epoch in range(self.num_epochs):
             # determine the number of min-batches based on the batch size and size of training data
@@ -80,11 +82,15 @@ class Model:
                 loss = criterion(outputs, labels)
                 loss.backward()
                 optimizer.step()
+                losses.append(loss.data)
 
                 if (i+1) % 4 == 0:
                     print ('Epoch [%d/%d], Step [%d/%d], Loss: %.4f'
                            %(epoch+1, self.num_epochs, i+1, 
                              len(self.dataset.train_data)/self.batch_size, loss.data))
+
+        with open(self.plot_dir + self.dataset.cat1 + self.dataset.cat2, 'w') as f:
+            f.write(str(losses))
 
     def __get_batch(self, df, i, batch_size):
         batches = []
