@@ -1,0 +1,140 @@
+DATASET: 30000
+CLASS: TEB
+
+
+Accuracy: 97 %
+
+
+Category:  t
+Precision:  0.9754152823920266
+Recall  0.9619921363040629
+F1-Score:  0.9686572088419663
+
+
+Category:  e
+Precision:  0.9859894921190894
+Recall  0.99076110866696
+F1-Score:  0.988369541364933
+
+
+Category:  b
+Precision:  0.973767526006332
+Recall  0.9781917310313494
+F1-Score:  0.9759746146872167
+Now try out your trained model!
+
+
+DATASET: 30000
+CLASS: TEBM
+
+
+Accuracy: 94 %
+
+
+Category:  t
+Precision:  0.9669621273166801
+Recall  0.8614501076812635
+F1-Score:  0.9111617312072894
+
+
+Category:  e
+Precision:  0.9796401515151515
+Recall  0.9713615023474178
+F1-Score:  0.9754832626119755
+
+
+Category:  b
+Precision:  0.8860635696821516
+Recall  0.9721030042918455
+F1-Score:  0.9270913277052956
+
+
+Category:  m
+Precision:  0.9601328903654485
+Recall  0.9429037520391517
+F1-Score:  0.951440329218107
+Now try out your trained model!
+
+
+DATASET: 30000
+CLASS: BMT
+
+
+Accuracy: 99 %
+
+
+Category:  b
+Precision:  0.9958819492107069
+Recall  0.99519890260631
+F1-Score:  0.9955403087478558
+
+
+Category:  m
+Precision:  0.9989258861439313
+Recall  0.9978540772532188
+F1-Score:  0.998389694041868
+
+
+Category:  t
+Precision:  0.9930394431554525
+Recall  0.9944237918215614
+F1-Score:  0.9937311353610402
+Now try out your trained model!
+
+
+DATASET: 30000
+CLASS: TM
+
+
+Accuracy: 99 %
+
+
+Category:  m
+Precision:  0.9994643813604713
+Recall  0.9989293361884368
+F1-Score:  0.9991967871485944
+
+
+Category:  t
+Precision:  0.9995160900072586
+Recall  0.999757986447241
+F1-Score:  0.9996370235934664
+Now try out your trained model!
+
+
+DATASET: 30000
+CLASS: EM
+
+
+Accuracy: 100 %
+
+
+Category:  e
+Precision:  1.0
+Recall  1.0
+F1-Score:  1.0
+
+
+Category:  m
+Precision:  1.0
+Recall  1.0
+F1-Score:  1.0
+Now try out your trained model!
+DATASET: 50000
+CLASS: TM
+
+
+Accuracy: 99 %
+
+
+Category:  t
+Precision:  0.9998561978717285
+Recall  0.9998561978717285
+F1-Score:  0.9998561978717285
+
+
+Category:  m
+Precision:  0.9996717005909389
+Recall  0.9996717005909389
+F1-Score:  0.9996717005909389
+Now try out your trained model!
