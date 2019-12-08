@@ -23,18 +23,18 @@ class Dataset:
         self.train_data = data[:self.train_len]
         self.test_data = data[-self.test_len:]
 
-    # Prepare Dataset for 2 categories
-    def prepare_for_cats(self, cat1, cat2):
+    # Prepare Dataset for N categories
+    def prepare_for_cats(self, cats):
 
-        self.cat1 = cat1
-        self.cat2 = cat2
+        self.cats = cats
+
         self.train_data = list()
         self.test_data = list()
 
         temp_set = list()
         
         for row in self.data:
-            if row[4] == cat1 or row[4] == cat2:
+            if row[4] in self.cats:
                 temp_set.append(row)
         self.__prepare(temp_set)
 

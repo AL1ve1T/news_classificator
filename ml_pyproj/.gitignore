@@ -4,3 +4,4 @@ venv
 uci-news-aggregator.csv
 __pycache__/
 *~
+*.save
